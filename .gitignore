@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+
+logs/*.log
+renders/*.wav
+renders/*.mp3
+renders/*.asd
+stems/**
+!stems/.gitkeep
+
+# Max
+*.maxpat.bak
+*.amxd.bak
