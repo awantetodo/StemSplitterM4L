@@ -16,9 +16,13 @@ Works with Live 10/11. (Live 12 already has native stem separation; use this for
 ### Windows
 
 ```powershell
-# Double-click install.ps1, or run:
-.\install.ps1
+# Recommended: double-click install-windows.bat
+
+# Or run from PowerShell:
+powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 ```
+
+Do not double-click `install.ps1` directly: Windows may open it in VS Code or Notepad instead of running it. Use `install-windows.bat` for double-click installation.
 
 ### macOS
 
@@ -85,6 +89,7 @@ StemSplitterM4L/
 ├── python/
 │   ├── stem_split.py        # Demucs wrapper
 │   └── requirements-lock.txt
+├── install-windows.bat      # Windows double-click installer
 ├── install.ps1              # Windows installer
 ├── install.command          # macOS installer
 ├── renders/                 # Recorded audio
